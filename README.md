@@ -21,7 +21,7 @@ Android客户端使用的是阅小说开源免费的API：
 
 相关链接：
 
-[阅小说iOS客户端](https://github.com/yuenov/reader-ios)
+[阅小说iOS客户端源码](https://github.com/yuenov/reader-ios)
 
 [阅小说接口文档](https://github.com/yuenov/reader-api)
 
