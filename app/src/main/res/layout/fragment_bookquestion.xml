@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp">
+
+    <RadioGroup
+        android:id="@+id/rgBrMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rbBrMenu1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableLeft="@drawable/feedback_checkbox"
+            android:drawablePadding="9dp"
+            android:gravity="center"
+            android:text="章节顺序错乱"
+            android:textColor="@color/gray_3333"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rbBrMenu2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33dp"
+            android:button="@null"
+            android:drawableLeft="@drawable/feedback_checkbox"
+            android:drawablePadding="9dp"
+            android:gravity="center"
+            android:text="内容丢失"
+            android:textColor="@color/gray_3333"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rbBrMenu3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33dp"
+            android:button="@null"
+            android:drawableLeft="@drawable/feedback_checkbox"
+            android:drawablePadding="9dp"
+            android:gravity="center"
+            android:text="没有更新"
+            android:textColor="@color/gray_3333"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rbBrMenu4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33dp"
+            android:button="@null"
+            android:drawableLeft="@drawable/feedback_checkbox"
+            android:drawablePadding="9dp"
+            android:gravity="center"
+            android:text="乱码错别字"
+            android:textColor="@color/gray_3333"
+            android:textSize="16sp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvBrSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/bg_productquestion_unsubmit"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="提交"
+        android:textColor="@color/gray_3333"
+        android:textSize="15sp" />
+
+</LinearLayout>

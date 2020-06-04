@@ -1,0 +1,73 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="BaseAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MyTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/gray_6666</item>
+    </style>
+
+    <!-- 从上往下动画展开 -->
+    <style name="ScaleAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/anim_pop_show</item>
+        <item name="android:windowExitAnimation">@anim/anim_pop_close</item>
+    </style>
+
+    <!--自定义seekbarstyle-->
+    <style name="CustomSeekbarStyle">
+        <item name="android:maxHeight">10dp</item>
+        <item name="android:indeterminateOnly">false</item>
+        <!--        <item name="android:indeterminateDrawable">@color/colorAccent</item>-->
+        <item name="android:progressDrawable">@drawable/seekbar_progress_drawable</item>
+        <item name="android:minHeight">10dp</item>
+        <item name="android:thumb">@mipmap/ic_light_process_point</item>
+    </style>
+
+    <declare-styleable name="Attr_MyInfoItemView">
+        <attr name="MyInfoIconResource" format="reference" />
+        <attr name="MyInfoName" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="MyListView">
+        <attr name="maxHeight" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="LightView">
+        <attr name="inSideResource" format="reference" />
+        <attr name="centerResource" format="reference" />
+        <attr name="outSideResource" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="EditTextView">
+        <attr name="hintText" format="string" />
+    </declare-styleable>
+
+
+    <!-- 透明渐变短动画 -->
+    <style name="FadeAnimationShort" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/anim_pop_opaque</item>
+        <item name="android:windowExitAnimation">@anim/anim_pop_alpha</item>
+    </style>
+
+    <declare-styleable name="BatteryView">
+        <attr name="battery_view_height" format="integer" />
+        <attr name="battery_view_width" format="integer" />
+        <attr name="battery_view_inside_margin" format="integer" />
+    </declare-styleable>
+
+</resources>

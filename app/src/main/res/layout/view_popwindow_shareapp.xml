@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/viewPopSaClose"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#66000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <!-- 微信-->
+        <LinearLayout
+            android:id="@+id/llPopSaWx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivPopSaWx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_infor_popshare_weixing_nor" />
+
+            <TextView
+                android:id="@+id/tvPopSaWx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="微信"
+                android:textColor="@color/gray_6666"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <!-- QQ-->
+        <LinearLayout
+            android:id="@+id/llPopSaQQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivPopSaQQ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_infor_popshare_qq_nor" />
+
+            <TextView
+                android:id="@+id/tvPopSaQQ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="QQ"
+                android:textColor="@color/gray_6666"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <!-- 复制链接-->
+        <LinearLayout
+            android:id="@+id/llPopSaCopy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivPopSaCopy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_infor_popshare_copylink_nor" />
+
+            <TextView
+                android:id="@+id/tvPopSaCopy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="复制链接"
+                android:textColor="@color/gray_6666"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="9dp"
+        android:background="#FAFAFA" />
+
+    <TextView
+        android:id="@+id/tvPopSaCancel"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@color/gray_3333"
+        android:textSize="17sp" />
+
+</LinearLayout>

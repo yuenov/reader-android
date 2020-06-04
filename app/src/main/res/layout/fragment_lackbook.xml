@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp">
+
+    <com.yuenov.open.widget.EditTextView
+        android:id="@+id/etvFlbTitle"
+        android:layout_marginTop="20dp"
+        app:hintText="书籍名称"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <com.yuenov.open.widget.EditTextView
+        android:id="@+id/etvFlbAuthor"
+        android:layout_marginTop="20dp"
+        app:hintText="书籍作者"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:id="@+id/tvFlbSubmit"
+        android:text="提交"
+        android:textSize="15sp"
+        android:background="@drawable/bg_productquestion_unsubmit"
+        android:layout_marginTop="21dp"
+        android:gravity="center"
+        android:enabled="false"
+        android:textColor="@color/gray_3333"
+        android:layout_width="match_parent"
+        android:layout_height="43dp" />
+
+</LinearLayout>

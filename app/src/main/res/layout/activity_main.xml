@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/htMaTabHost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rlContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.renrui.libraries.widget.CustomRadioGroup
+            android:id="@+id/rgMaGroup"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="#F9F9F9"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- bookShelf-->
+            <RelativeLayout
+                android:id="@+id/rlMaBookShelf"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbMaBookShelf"
+                    android:layout_width="36dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/transparent"
+                    android:button="@null"
+                    android:checked="false"
+                    android:clickable="false"
+                    android:drawableTop="@drawable/bg_tab_bookshelf_selector"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/tvMaBookShelf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="3dp"
+                    android:singleLine="true"
+                    android:text="@string/MainActivity_tabBookShelf"
+                    android:textColor="@color/gary_c5c5"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <!-- find-->
+            <RelativeLayout
+                android:id="@+id/rlMaFind"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbMaFind"
+                    android:layout_width="36dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@color/transparent"
+                    android:button="@null"
+                    android:checked="false"
+                    android:clickable="false"
+                    android:drawableTop="@drawable/bg_tab_find_selector"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/tvMaFind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="3dp"
+                    android:singleLine="true"
+                    android:text="@string/MainActivity_tabFind"
+                    android:textColor="@color/gary_c5c5"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <!-- bookCity-->
+            <RelativeLayout
+                android:id="@+id/rlMaBookCity"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbMaBookCity"
+                    android:layout_width="36dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@color/transparent"
+                    android:button="@null"
+                    android:checked="false"
+                    android:clickable="false"
+                    android:drawableTop="@drawable/bg_tab_bookcity_selector"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/tvMaBookCity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="3dp"
+                    android:singleLine="true"
+                    android:text="@string/MainActivity_tabBookCity"
+                    android:textColor="@color/gary_c5c5"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+        </com.renrui.libraries.widget.CustomRadioGroup>
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/rgMaGroup" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/rgMaGroup"
+            android:background="@mipmap/im_maintab_topline"
+            android:contentDescription="@null" />
+
+    </RelativeLayout>
+
+</TabHost>

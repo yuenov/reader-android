@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp">
+
+    <EditText
+        android:id="@+id/etFpqDesc"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_productquestion_desc"
+        android:gravity="top"
+        android:hint="留下您宝贵的意见吧~"
+        android:maxLength="200"
+        android:paddingLeft="6dp"
+        android:paddingTop="9dp"
+        android:paddingRight="6dp"
+        android:paddingBottom="9dp"
+        android:textCursorDrawable="@drawable/feedback_cursor"
+        android:textSize="15sp" />
+
+    <com.yuenov.open.widget.EditTextView
+        android:id="@+id/etvFpqContact"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        app:hintText="手机/QQ/邮箱" />
+
+    <TextView
+        android:id="@+id/tvFpqSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/bg_productquestion_unsubmit"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="提交"
+        android:textColor="@color/gray_3333"
+        android:textSize="15sp" />
+
+</LinearLayout>

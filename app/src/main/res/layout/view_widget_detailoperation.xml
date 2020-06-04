@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- menu list content-->
+    <RelativeLayout
+        android:id="@+id/rlWgDpMenuList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llWgDpOperation"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            android:id="@+id/viewWgDpMenuListClose"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#33000000" />
+
+        <LinearLayout
+            android:id="@+id/llWgDpMenuListData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/_e2e2"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/tvWgDpMenuListTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:textColor="@color/gray_6666"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:id="@+id/rlWgDpMenuListOrder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="5dp">
+
+                    <ImageView
+                        android:id="@+id/ivWgDpMenuListOrder"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/ic_book_down" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <com.yuenov.open.widget.MyListView
+                android:id="@+id/lvWgDpMenuList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/_e2e2"
+                android:divider="@color/transparent"
+                android:dividerHeight="0dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!-- process content-->
+    <LinearLayout
+        android:id="@+id/llWgDpProcessContent"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_above="@+id/llWgDpOperation"
+        android:background="@color/_f0f0"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvWgDpProcessTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="title"
+            android:textColor="@color/gray_6666"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_left_arrow" />
+
+            <SeekBar
+                android:id="@+id/skWgDpProcess"
+                style="@style/CustomSeekbarStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="100"
+                android:maxHeight="2dp"
+                android:min="0"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:progress="30" />
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_right_arrow" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- light content-->
+    <LinearLayout
+        android:id="@+id/llWgDpLightContent"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_above="@+id/llWgDpOperation"
+        android:background="@color/_f0f0"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/ic_book_light_left" />
+
+            <SeekBar
+                android:id="@+id/skWgDpLight"
+                style="@style/CustomSeekbarStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="255"
+                android:maxHeight="2dp"
+                android:min="0"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:progress="30" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/ic_book_light_right" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <com.yuenov.open.widget.LightView
+                android:id="@+id/lvWgDpLight1"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                app:inSideResource="@mipmap/ic_theme1_read_bg"
+                app:outSideResource="@mipmap/ic_theme1_border" />
+
+            <com.yuenov.open.widget.LightView
+                android:id="@+id/lvWgDpLight2"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                app:inSideResource="@mipmap/ic_theme2_read_bg"
+                app:outSideResource="@mipmap/ic_theme2_border" />
+
+            <com.yuenov.open.widget.LightView
+                android:id="@+id/lvWgDpLight3"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                app:inSideResource="@mipmap/ic_theme3_read_bg"
+                app:outSideResource="@mipmap/ic_theme3_border" />
+
+            <com.yuenov.open.widget.LightView
+                android:id="@+id/lvWgDpLight4"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                app:centerResource="@mipmap/ic_theme_eye"
+                app:inSideResource="@mipmap/ic_theme4_read_bg"
+                app:outSideResource="@mipmap/ic_theme4_border" />
+
+            <com.yuenov.open.widget.LightView
+                android:id="@+id/lvWgDpLight5"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                app:centerResource="@mipmap/ic_theme_moon"
+                app:inSideResource="@mipmap/ic_theme5_read_bg"
+                app:outSideResource="@mipmap/ic_theme5_border" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- front content-->
+    <LinearLayout
+        android:id="@+id/llWgDpFrontContent"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_above="@+id/llWgDpOperation"
+        android:background="@color/_f0f0"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/llWgDpFrontSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/ic_book_set_left" />
+
+            <SeekBar
+                android:id="@+id/skWgDpFront"
+                style="@style/CustomSeekbarStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="8"
+                android:maxHeight="2dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:progress="0" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/ic_book_set_right" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="15dp">
+
+            <TextView
+                android:id="@+id/tvWgDpAnim1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_widget_bd_op_unselect"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="仿真翻页"
+                android:textColor="@color/_5e60"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvWgDpAnim2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_widget_bd_op_unselect"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="滑动翻页"
+                android:textColor="@color/_5e60"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvWgDpAnim3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_widget_bd_op_unselect"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="上下滚动"
+                android:textColor="@color/_5e60"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvWgDpAnim4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_widget_bd_op_unselect"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="无"
+                android:textColor="@color/_5e60"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- operation-->
+    <LinearLayout
+        android:id="@+id/llWgDpOperation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/_f0f0"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <!--    目录   -->
+        <LinearLayout
+            android:id="@+id/llWgDpMenu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/ivWgDpMenu"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:duplicateParentState="false"
+                android:src="@mipmap/ic_book_menu_unselect" />
+
+        </LinearLayout>
+
+        <!--   进度  -->
+        <LinearLayout
+            android:id="@+id/llWgDpProcess"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ivWgDpProcess"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:duplicateParentState="false"
+                android:src="@mipmap/ic_book_progress_unselect" />
+
+        </LinearLayout>
+
+        <!--   亮度-->
+        <LinearLayout
+            android:id="@+id/llWgDpLight"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ivWgDpLight"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:duplicateParentState="false"
+                android:src="@mipmap/ic_book_light_unselect" />
+
+        </LinearLayout>
+
+        <!--  字体-->
+        <LinearLayout
+            android:id="@+id/llWgDpFront"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ivWgDpFront"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:duplicateParentState="false"
+                android:src="@mipmap/ic_book_set_unselect" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

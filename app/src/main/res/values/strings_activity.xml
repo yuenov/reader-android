@@ -1,0 +1,90 @@
+<resources>
+
+    <string name="MainActivity_tabBookShelf">书架</string>
+    <string name="MainActivity_tabFind">发现</string>
+    <string name="MainActivity_tabBookCity">书城</string>
+    <string name="MainActivity_tabMyInfo">我</string>
+
+    <string name="MyInfoActivity_feedback">意见反馈</string>
+    <string name="MyInfoActivity_history">浏览记录</string>
+    <string name="MyInfoActivity_ph">阅读偏好</string>
+    <string name="MyInfoActivity_about">关于我们</string>
+    <string name="MyInfoActivity_share">分享</string>
+    <string name="MyInfoActivity_question">常见问题</string>
+
+    <string name="AboutMeActivity_fwxy">用户服务协议</string>
+    <string name="AboutMeActivity_yszc">隐私政策</string>
+
+    <string name="BActivity_title">发现</string>
+    <string name="BActivity_type1">分类</string>
+    <string name="BActivity_type2">榜单</string>
+    <string name="BActivity_type3">完本</string>
+    <string name="BActivity_type4">专题</string>
+
+    <string name="DetailPreviewActivity_Chapter">共%d章</string>
+    <string name="DetailPreviewActivity_startRead">开始阅读</string>
+    <string name="DetailPreviewActivity_continueRead">继续阅读</string>
+    <string name="DetailPreviewActivity_addBookShelf">加书架</string>
+    <string name="DetailPreviewActivity_removeBookShelf">在书架</string>
+
+
+    <string name="BookMenuListActivity_Chapter">%s 共%d章</string>
+
+    <string name="BSelectDownloadActivity_Title">选择下载的章节</string>
+    <string name="BSelectDownloadActivity_TopTitle">跳过已下载的章节</string>
+    <string name="BSelectDownloadActivity_item1">后50章</string>
+    <string name="BSelectDownloadActivity_item2">后100章</string>
+    <string name="BSelectDownloadActivity_item3">后200章</string>
+    <string name="BSelectDownloadActivity_item4">下载全部章节</string>
+    <string name="BSelectDownloadActivity_noDownload">暂无可下载章节</string>
+    <string name="BSelectDownloadActivity_downloading">下载中...</string>
+    <string name="BSelectDownloadActivity_downloadEnd">下载完成</string>
+
+    <string name="CategoryEndListActivity_title">完本</string>
+
+    <string name="SpecialListActivity_title">专题</string>
+
+    <string name="CategoryChannelItemListActivity_filter1">最新</string>
+    <string name="CategoryChannelItemListActivity_filter2">最热</string>
+    <string name="CategoryChannelItemListActivity_filter3">完结</string>
+    <string name="CategoryChannelItemListActivity_filter1_value">NEWEST</string>
+    <string name="CategoryChannelItemListActivity_filter2_value">HOT</string>
+    <string name="CategoryChannelItemListActivity_filter3_value">END</string>
+
+    <string name="ReadingPreferencesActivity_appTitle">阅读偏好</string>
+    <string name="ReadingPreferencesActivity_title">请选择性别</string>
+    <string name="ReadingPreferencesActivity_nan">男生</string>
+    <string name="ReadingPreferencesActivity_nv">女生</string>
+
+    <string name="BookShelfActivity_empty_title1">一日无书</string>
+    <string name="BookShelfActivity_empty_title2">百事荒芜</string>
+    <string name="BookShelfActivity_empty_find">去找书</string>
+
+    <string name="FeedBackActivity_title">问题反馈</string>
+
+    <string name="CommonProblemActivity_title">常见问题</string>
+    <string name="CommonProblemActivity_content_titl1">Q:找不到想要的书籍？</string>
+    <string name="CommonProblemActivity_content_titl_desc1">在 </string>
+    <string name="CommonProblemActivity_content_titl_desc2"> 我的->意见反馈->缺少书籍 </string>
+    <string name="CommonProblemActivity_content_titl_desc3"> 中上报您想要看的书籍。</string>
+    <string name="CommonProblemActivity_content_titl2">Q:突然就上不了网？</string>
+    <string name="CommonProblemActivity_content_titl2_desc1">此时可能网络不稳定， </string>
+    <string name="CommonProblemActivity_content_titl2_desc2">点击这里</string>
+    <string name="CommonProblemActivity_content_titl2_desc3"> 切换一下网络再试试。</string>
+    <string name="CommonProblemActivity_content_titl3">Q:其他系统可以下载吗？</string>
+    <string name="CommonProblemActivity_content_titl3_desc2">阅小说有IOS和Android两个版本，IOS版本在App Store中下载，Android版本在Google Play(谷歌应用市场) 或我们的网站都可以下载。其他下载渠道请访问我们的网站</string>
+    <string name="CommonProblemActivity_content_titl3_desc3">http://yuenov.com</string>
+    <string name="CommonProblemActivity_content_titl4">Q:对我们的产品有意见？</string>
+    <string name="CommonProblemActivity_content_titl4_desc1">加入我们参加讨论吧。</string>
+    <string name="CommonProblemActivity_content_titl4_desc2">Telegram：</string>
+    <string name="CommonProblemActivity_content_titl4_desc3">https://t.me/yuenow</string>
+
+    <string name="ReadHistoryListActivity_appTitle">浏览记录</string>
+
+    <string name="AboutMeActivity_appTitle">关于我们</string>
+
+    <string name="MyInfoActivity_copy_wechat">去微信粘贴给好友</string>
+    <string name="MyInfoActivity_copy_qq">去QQ粘贴给好友</string>
+    <string name="MyInfoActivity_copy_link">下载地址已复制，快去粘贴吧</string>
+
+</resources>

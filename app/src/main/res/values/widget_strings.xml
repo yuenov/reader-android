@@ -1,0 +1,32 @@
+<resources>
+
+    <string name="FindIndexListAdapter_all">查看全部</string>
+    <string name="FindIndexListAdapter_replace">换一批</string>
+
+    <string name="CategoryBookListAdapter_stat_lz">连载</string>
+    <string name="CategoryBookListAdapter_stat_wj">完结</string>
+    <string name="CategoryBookListAdapter_stat_category">分类</string>
+
+    <string name="gender_text_male">男生</string>
+    <string name="gender_text_female">女生</string>
+    <string name="gender_value_male">MALE</string>
+    <string name="gender_value_female">FEMALE</string>
+
+
+    <string name="feedback_title_bookProblem">书籍纠错</string>
+    <string name="feedback_title_productQuestion">产品问题</string>
+    <string name="feedback_title_lackBook">缺少书籍</string>
+
+    <string name="AboutChapterStatus_end">完结</string>
+    <string name="AboutChapterStatus_serialize">连载</string>
+
+    <string name="SearchBookListAdapter_addBookShelf">加书架</string>
+    <string name="SearchBookListAdapter_InBookShelf">已加书架</string>
+    <string name="SearchBookListAdapter_startRead">开始阅读</string>
+
+    <string name="LoadingView_loading">加载中...</string>
+    <string name="LoadingView_backDownload">后台下载</string>
+
+    <string name="ChapterStatus_wanjie">已完结</string>
+
+</resources>

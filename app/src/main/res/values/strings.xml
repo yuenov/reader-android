@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">阅小说</string>
+    <string name="app_desc">要看的 在这里</string>
+
+
+    <string name="info_save_success">保存成功</string>
+    <string name="info_addBookShelf_success">已添加到书架</string>
+    <string name="info_switchNetWork_success">切换网络成功</string>
+
+    <string name="info_chapterStatus_end">已完结</string>
+    <string name="info_chapterStatus_serialize">连载中</string>
+
+</resources>

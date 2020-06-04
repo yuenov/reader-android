@@ -1,0 +1,117 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.yuenov.open"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0.0.1"
+
+        //使用renderscript 兼容包
+        renderscriptTargetApi 26
+        renderscriptSupportModeEnabled true
+
+        flavorDimensions "default"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    productFlavors {
+        develop {
+            manifestPlaceholders = [
+                    CHANNEL_VALUE : "develop",
+            ]
+        }
+        googlePlay {
+            manifestPlaceholders = [
+                    CHANNEL_VALUE : "googlePlay",
+            ]
+        }
+        other {
+            manifestPlaceholders = [
+                    CHANNEL_VALUE : "other",
+            ]
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(dir: 'libs', include: ['*.aar'])
+
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support:support-v4:28.0.0'
+
+    // 公共类库
+    implementation('com.github.chkmouse-1:rrLibrary:1.0.132') {
+        exclude group: 'com.android.support'
+    }
+
+    // eventBus
+    implementation 'org.greenrobot:eventbus:3.0.0'
+
+    // banner https://github.com/youth5201314/banner
+    implementation 'com.youth.banner:banner:1.4.10'
+
+    // butterKnife  https://github.com/JakeWharton/butterknife
+    implementation 'com.jakewharton:butterknife:10.2.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.0'
+    // 状态栏  https://github.com/gyf-dev/ImmersionBar
+    implementation 'com.gyf.immersionbar:immersionbar:3.0.0'
+
+    // glide
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+    // 模糊
+    implementation 'com.github.pinguo-zhouwei:EasyBlur:v1.0.0'
+
+    // brvah    https://github.com/CymChad/BaseRecyclerViewAdapterHelper
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.47'
+
+    // room
+    implementation "android.arch.persistence.room:runtime:1.1.1"
+    annotationProcessor "android.arch.persistence.room:compiler:1.1.1"
+
+    implementation 'com.github.devlight.shadowlayout:library:1.0.2'
+
+    implementation 'com.github.open-android:RoundedImageView:v1.0.0'
+
+    // 数据库调试工具
+    debugImplementation 'com.amitshekhar.android:debug-db:1.0.6'
+
+    // 标签 https://github.com/hongyangAndroid/FlowLayout
+    implementation 'com.hyman:flowlayout-lib:1.1.2'
+
+    // 弹窗 https://github.com/limxing/Android-PromptDialog
+    implementation 'com.github.limxing:Android-PromptDialog:1.1.3'
+
+    // ImmersionBar
+    // 基础依赖包，必须要依赖
+    implementation 'com.gyf.immersionbar:immersionbar:3.0.0'
+    // fragment快速实现（可选）
+    implementation 'com.gyf.immersionbar:immersionbar-components:3.0.0'
+
+    implementation 'com.github.githubwing:ByeBurger:1.2.3'
+}

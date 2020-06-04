@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlCiContent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/viewCiTop"
+        android:layout_width="1dp"
+        android:visibility="gone"
+        android:layout_height="25dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <com.yuenov.open.widget.page.PageView
+            android:id="@+id/pvDiContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:paddingLeft="20dp"
+            android:paddingTop="3dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="40dp"
+            tools:visibility="gone" />
+
+        <!--top-->
+        <RelativeLayout
+            android:id="@+id/rlDiTop"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/_f0f0"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvDiLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:drawableLeft="@drawable/bg_title_back_selector"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text=""
+                android:textColor="@color/gray_3333"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/tvDiDownLoad"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@+id/tvDiLeft"
+                android:src="@mipmap/ic_book_download_black" />
+
+            <ImageView
+                android:id="@+id/tvDiUpdateContent"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@+id/tvDiDownLoad"
+                android:src="@mipmap/ic_button_reload_thin" />
+
+            <ImageView
+                android:id="@+id/tvDiAddShelf"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@+id/tvDiUpdateContent"
+                android:src="@mipmap/ic_book_add_black" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/gray_cacc" />
+
+        </RelativeLayout>
+
+        <!--bottom-->
+        <com.yuenov.open.widget.DetailOperationView
+            android:id="@+id/dovDiOperation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</LinearLayout>

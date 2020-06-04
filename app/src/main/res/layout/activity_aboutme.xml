@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.yuenov.open.widget.MyAppTitle
+        android:id="@+id/myAppTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/rivAbmIcon"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="50dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_app_icon_white"
+        app:riv_corner_radius_bottom_left="5dp"
+        app:riv_corner_radius_bottom_right="5dp"
+        app:riv_corner_radius_top_left="5dp"
+        app:riv_corner_radius_top_right="5dp"
+        app:riv_oval="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="@string/app_name"
+        android:textColor="@color/gray_3333"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvAbmVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text=""
+        android:textColor="@color/gray_6666"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="9dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/gray_f9f9" />
+
+    <RelativeLayout
+        android:id="@+id/rlAbmFwxy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvAbmFwxy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/AboutMeActivity_fwxy"
+            android:textColor="@color/gray_3333"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/ivAbmFwxy"
+            android:layout_width="9sp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_right_arrow" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_ebeb" />
+
+    <RelativeLayout
+        android:id="@+id/rlAbmYsxy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvAbmYsxy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/AboutMeActivity_yszc"
+            android:textColor="@color/gray_3333"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/ivAbmYsxy"
+            android:layout_width="9sp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_right_arrow" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_ebeb" />
+
+</LinearLayout>

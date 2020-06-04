@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <View
+        android:id="@+id/viewClLine"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_ebeb" />
+
+    <RelativeLayout
+        android:id="@+id/rlClContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewClLine"
+        android:orientation="horizontal"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/rivClCoverImg"
+            android:layout_width="60dp"
+            android:layout_height="81dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_book_list_default"
+            app:riv_corner_radius_bottom_left="5dp"
+            app:riv_corner_radius_bottom_right="5dp"
+            app:riv_corner_radius_top_left="5dp"
+            app:riv_corner_radius_top_right="5dp"
+            app:riv_oval="false" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/rivClOrder"
+            android:layout_width="16dp"
+            android:layout_height="21dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_img_num1"
+            app:riv_corner_radius_bottom_left="0dp"
+            app:riv_corner_radius_bottom_right="0dp"
+            app:riv_corner_radius_top_left="5dp"
+            app:riv_corner_radius_top_right="0dp"
+            app:riv_oval="false" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/rivClCoverImg"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvClTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="title"
+                android:textColor="@color/gray_3333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvClDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="desc"
+                android:textColor="@color/gray_9999"
+                android:textSize="13sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvClAuthor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="author"
+                    android:textColor="@color/gray_9999"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tvClCategoryName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/bg_category_item_stat_categoryname"
+                    android:gravity="center"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:layout_centerVertical="true"
+                    android:text="@string/CategoryBookListAdapter_stat_category"
+                    android:textColor="#A5A5A5"
+                    android:textSize="9sp" />
+
+                <TextView
+                    android:id="@+id/tvClLz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/tvClCategoryName"
+                    android:background="@drawable/bg_category_item_stat_lz"
+                    android:gravity="center"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:layout_centerVertical="true"
+                    android:text="@string/CategoryBookListAdapter_stat_lz"
+                    android:textColor="@color/_aae4"
+                    android:textSize="9sp" />
+
+                <TextView
+                    android:id="@+id/tvClWj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/tvClLz"
+                    android:background="@drawable/bg_category_item_stat_wj"
+                    android:gravity="center"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:layout_centerVertical="true"
+                    android:text="@string/CategoryBookListAdapter_stat_wj"
+                    android:textColor="@color/_b838"
+                    android:textSize="9sp"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
