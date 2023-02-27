@@ -4,30 +4,29 @@ buildscript {
 
     repositories {
         google()
-        jcenter()
-
+        mavenCentral()
         maven { url 'https://jitpack.io' }
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.6.3'
+        classpath 'com.android.tools.build:gradle:4.1.0'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.3.31"
         classpath 'com.jakewharton:butterknife-gradle-plugin:10.2.0'
-        classpath 'com.novoda:bintray-release:0.9.1'
+        // classpath 'com.novoda:bintray-release:0.9.1'
     }
 }
 
 allprojects {
     repositories {
         google()
-        jcenter()
+        mavenCentral()
         maven { url "https://jitpack.io" }
-        maven { url 'https://dl.bintray.com/umsdk/release' }
+        // maven { url 'https://dl.bintray.com/umsdk/release' }
 
-        maven { url 'https://maven.aliyun.com/repository/public/' }
-        maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }
-        maven { url 'http://maven.aliyun.com/nexus/content/repositories/google' }
-        maven { url 'http://maven.aliyun.com/nexus/content/repositories/gradle-plugin' }
+        // maven { url 'https://maven.aliyun.com/repository/public/' }
+        // maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }
+        // maven { url 'http://maven.aliyun.com/nexus/content/repositories/google' }
+        // maven { url 'http://maven.aliyun.com/nexus/content/repositories/gradle-plugin' }
     }
 
     //中文注释
